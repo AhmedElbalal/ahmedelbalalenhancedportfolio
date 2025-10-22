@@ -1,0 +1,122 @@
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, var(--light), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: var(--gray);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.experience-highlights {
+    margin: 40px 0;
+}
+
+.highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(0, 163, 255, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.highlight i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-top: 5px;
+}
+
+.highlight h4 {
+    margin-bottom: 8px;
+    color: var(--light);
+}
+
+.highlight p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.cta-section {
+    background: rgba(0, 163, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 163, 255, 0.2);
+    text-align: center;
+}
+
+.cta-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.tech-stack-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+.stack-layer {
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(0, 163, 255, 0.1);
+    border: 1px solid rgba(0, 163, 255, 0.2);
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+
+.stack-layer:hover {
+    transform: translateY(-5px) rotateX(5deg);
+    box-shadow: var(--shadow);
+}
+
+.stack-layer h4 {
+    margin-bottom: 15px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tech-icons i {
+    font-size: 2rem;
+    color: var(--light);
+    transition: all 0.3s ease;
+}
+
+.tech-icons i:hover {
+    color: var(--primary);
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-title {
+        font-size: 2.2rem;
+    }
+}
