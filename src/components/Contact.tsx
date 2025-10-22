@@ -53,11 +53,11 @@ export const Contact: React.FC = () => {
                             </div>
                             <div className="contact-method">
                                 <i className="fas fa-phone"></i>
-                                <span>+20 115 033 8515</span>
+                                <span>+14387965224</span>
                             </div>
                             <div className="contact-method">
                                 <i className="fas fa-map-marker-alt"></i>
-                                <span>Egypt</span>
+                                <span>Montreal</span>
                             </div>
                         </div>
                     </div>
